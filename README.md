@@ -4,6 +4,8 @@
 #### 2) challenge.ipynb
 #### 3) config.py
 
+Please note that I couldn't upload the ratings.csv and kaggle_metadata.csv files since they were too large.  I tried the lfs but it didn't work either.  I asked the TA they told me its okay as long as I can upload the code.
+
 ### Assumptions:
 
 1) We are assuming that data in some of the columns (i.e. budget, box office, running time, and release date) has a certain set of expressions, while we can actually get them in different forms if we get new data. We can solve this by adding a try and except block.  For example for budget data:
