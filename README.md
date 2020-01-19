@@ -17,7 +17,7 @@
  
  The output should be the error message if we got a different form of budget data that the ones already defined, and this will be the same for all other columns that go with the same logic. If we get this error then we will know that there is new data format that is different that the regular expressions already defined. Please note: In this case we should, remove the last case in the parse_dollar function so we can get the exception message.
  
- 2) We are assuming that the alternate titles list is only a certain set of languages columns that we found in the wiki data file we got. However, if we got new data we might get columns of alternate langauge titles that were not defined in our list or vice versa we can might not have some of the columns that are defined in the list. In this second case we can create a try except block inside the clean_movie function created:
+2) We are assuming that the alternate titles list is only a certain set of languages columns that we found in the wiki data file we got. However, if we got new data we might get columns of alternate langauge titles that were not defined in our list or vice versa we can might not have some of the columns that are defined in the list. In this second case we can create a try except block inside the clean_movie function created:
  
          > try:
     
@@ -34,4 +34,7 @@
      
             > print("An error occured. One of the columns isn't found")
   
-  3) 
+ 3) When transforming and cleaning data after merging the kaggle data with wiki data, we did some exploratory analysis to decide which columns should we drop from wiki or kaggle data and which one should we keep from wiki or kaggle data. However, when if we get new data, this might not be the case in this case that will affect the validity of the data we will have in the new movie table created.
+  
+ 4)
+  
