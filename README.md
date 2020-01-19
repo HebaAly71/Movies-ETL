@@ -36,5 +36,20 @@
   
  3) When transforming and cleaning data after merging the kaggle data with wiki data, we did some exploratory analysis to decide which columns should we drop from wiki or kaggle data and which one should we keep from wiki or kaggle data. However, when if we get new data, this might not be the case in this case that will affect the validity of the data we will have in the new movie table created.
   
- 4)
+ 4) One of the limitations of the function that it only accepts 2 csv files, and one json file.  So if one of the files that are used as an input file isn't in a csv format then the function is going to through an error and it won't work. In this case we can also create a try except block when calling the function:
+ 
+         > try:
+    
+            > etl(wiki_movies_raw, kaggle_metadata_file,ratings_file)
+        
+         > except TypeError:
+     
+            > print("An error occured. One of the files is not a csv and can't read it")
+            
+ 
+ 5) One of the limitation of the function that it can only take 3 arguments and not more than that, this means it can only extract, and transform 3 files.
+ 
+         
+ 
+ 
   
