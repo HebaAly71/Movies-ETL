@@ -2,6 +2,7 @@
 ### Important files:
 #### 1) challenge.py
 #### 2) challenge.ipynb
+#### 3) config.py
 
 ### Assumptions:
 
