@@ -1,9 +1,9 @@
 # Movies-ETL
-#### Important files:
-##### 1) challenge.py
-##### 2) challenge.ipynb
+### Important files:
+#### 1) challenge.py
+#### 2) challenge.ipynb
 
-##### Assumptions:
+### Assumptions:
 
 1) We are assuming that data in some of the columns (i.e. budget, box office, running time, and release date) has a certain set of expressions, while we can actually get them in different forms if we get new data. We can solve this by adding a try and except block.  For example for budget data:
 
